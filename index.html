@@ -161,6 +161,9 @@
   .site:hover { border-color: var(--accent); }
 
   /* Process */
+  .pipe-shot { margin: 32px 0 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .pipe-shot img { width: 100%; height: auto; }
+  .pipe-shot figcaption { padding: 14px 18px 16px; font-size: 14px; color: var(--muted); }
   .pipeline { margin-top: 32px; display: grid; gap: 12px; }
   .step { display: grid; grid-template-columns: 56px 1fr; gap: 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
   .step .n { font-family: var(--head); font-size: 22px; color: var(--accent); font-weight: 600; }
@@ -327,6 +330,10 @@
       <span class="eyebrow">How I work</span>
       <h2 class="section-title">A real content pipeline, end to end</h2>
       <p class="lede">The automated workflow behind the RevUp Now AI blog: one topic goes in, a reviewed, published, socially repurposed post comes out. A human stays in the loop at review.</p>
+      <figure class="pipe-shot">
+        <img src="zeng_media/process/content-pipeline.png" alt="RevUp Now AI content pipeline dashboard showing blog drafts waiting for review, with status, waiting time and review actions" loading="lazy">
+        <figcaption>The live content pipeline dashboard. Each blog draft moves from review to approval to publishing from one screen.</figcaption>
+      </figure>
       <div class="pipeline">
         <div class="step"><div class="n">01</div><div><h3>Trigger &amp; topic select</h3><p>A weekly scheduled job wakes the pipeline headlessly and picks the next unused topic from a maintained content queue.</p><div class="chips"><span class="chip">Windows Task Scheduler</span><span class="chip">PowerShell</span></div></div></div>
         <div class="step"><div class="n">02</div><div><h3>Write &amp; illustrate</h3><p>Claude Code writes the full article in the brand's voice and template, then generates a custom hero image to match.</p><div class="chips"><span class="chip">Claude Code</span><span class="chip">Higgsfield (nano_banana_pro)</span></div></div></div>
