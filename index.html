@@ -1,0 +1,658 @@
+
+
+<title>Ricky Mejila | Creative Marketing &amp; AI Automation Specialist</title>
+<meta name="description" content="Ricky Mejila: creative marketing and AI automation specialist. Reels, video, social graphics, print, websites and AI workflow automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #101010;
+    --card: #171717;
+    --card-2: #1d1d1d;
+    --line: rgba(255, 255, 255, 0.08);
+    --text: #f4f4f5;
+    --muted: #a6a7ae;
+    --accent: #45e77b;
+    --accent-ink: #0b1a10;
+    --radius: 18px;
+    --head: "Sora", "Inter", sans-serif;
+    --body: "Inter", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size: 64px 64px;
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, video { max-width: 100%; display: block; }
+  a { color: inherit; }
+  h1, h2, h3, h4 { font-family: var(--head); line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+  p { margin: 0; }
+  button { font: inherit; color: inherit; }
+
+  .wrap {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 72px 40px 32px;
+  }
+  /* Sidebar profile */
+  .profile {
+    position: sticky; top: 32px; align-self: start;
+    background: var(--card); border: 1px solid var(--line); border-radius: 24px;
+    padding: 18px; text-align: center;
+  }
+  .profile .photo {
+    width: 100%; aspect-ratio: 4 / 4.4; object-fit: cover; object-position: center top;
+    border-radius: 18px; background: var(--card-2);
+  }
+  .profile .name { margin-top: 18px; font-family: var(--head); font-weight: 700; font-size: 22px; }
+  .profile .role { margin-top: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+  .profile .email { display: inline-block; margin-top: 14px; color: var(--text); font-size: 14px; }
+  .profile .loc { margin-top: 2px; font-size: 12px; color: var(--muted); }
+  .socials { display: flex; justify-content: center; gap: 10px; margin: 16px 0; }
+  .socials a {
+    width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--card-2); border: 1px solid var(--line); text-decoration: none; font-size: 13px; font-weight: 600;
+  }
+  .socials a:hover { border-color: var(--accent); color: var(--accent); }
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    width: 100%; padding: 14px 16px; border-radius: 14px;
+    font-size: 14px; font-weight: 600; text-decoration: none;
+    border: 1px solid var(--line); background: var(--card-2); color: var(--text); cursor: pointer;
+  }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); margin-top: 10px; }
+  .btn.primary:hover { filter: brightness(1.05); }
+  .profile .actions { display: grid; gap: 0; }
+  .avail { margin-top: 16px; font-size: 12px; color: var(--muted); display: inline-flex; align-items: center; gap: 8px; }
+  .avail::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+
+  main { min-width: 0; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+  }
+  .eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  section:first-of-type { border-top: 0; padding-top: 16px; }
+  .section-title { margin-top: 14px; font-size: clamp(28px, 3.4vw, 40px); font-weight: 600; }
+  .lede { margin-top: 14px; color: var(--muted); max-width: 66ch; }
+
+  .hero h1 { font-size: clamp(40px, 6vw, 72px); font-weight: 600; margin-top: 16px; }
+  .hero h1 .accent { color: var(--accent); }
+  .hero .intro { margin-top: 22px; font-size: 17px; color: var(--muted); max-width: 60ch; }
+  .hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .hero .ctas .btn { width: auto; padding: 13px 20px; margin-top: 0; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 40px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 22px 20px; }
+  .stat .num { font-family: var(--head); font-size: 32px; font-weight: 600; }
+  .stat .label { margin-top: 6px; font-size: 13px; color: var(--muted); }
+  .scroll-cue { margin-top: 36px; font-size: 12px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 32px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; min-width: 0; }
+  .card h3 { font-size: 18px; font-weight: 600; }
+  .card p { margin-top: 10px; color: var(--muted); font-size: 15px; }
+  .card .tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .chip { font-size: 13px; padding: 7px 12px; border-radius: 999px; background: var(--card-2); border: 1px solid var(--line); }
+
+  /* Company tabs */
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+  .tab {
+    padding: 10px 16px; border-radius: 999px; cursor: pointer;
+    background: var(--card-2); border: 1px solid var(--line); color: var(--muted); font-size: 14px; font-weight: 600;
+  }
+  .tab:hover { color: var(--text); }
+  .tab[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .tab .count { font-weight: 500; opacity: 0.7; margin-left: 6px; }
+  .panel { display: none; margin-top: 28px; }
+  .panel.active { display: block; }
+  .panel h3.sub { font-size: 18px; font-weight: 600; margin: 36px 0 4px; display: flex; align-items: center; gap: 10px; }
+  .panel h3.sub:first-child { margin-top: 0; }
+  .panel h3.sub .n { font-size: 13px; color: var(--muted); font-weight: 500; }
+  .panel .hint { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  .vid-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin-top: 14px; }
+  .vid { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .vid video { width: 100%; max-height: 520px; background: #000; object-fit: contain; }
+  .vid figcaption { padding: 12px 14px 14px; font-size: 14px; font-weight: 600; }
+  .vid.wide { grid-column: span 2; }
+  @media (max-width: 700px) { .vid.wide { grid-column: auto; } }
+
+  .shot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin-top: 14px; }
+  .shot { padding: 0; text-align: left; cursor: zoom-in; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .shot img { width: 100%; height: auto; }
+  .shot span { display: block; padding: 11px 13px 13px; font-size: 13px; color: var(--muted); }
+  .shot:hover { border-color: var(--accent); }
+  .shot:focus-visible, .tab:focus-visible, .btn:focus-visible, .site:focus-visible, .lb button:focus-visible, .vid video:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+
+  .blog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 14px; }
+  .post { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+  .post img { width: 100%; height: auto; }
+  .post .body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .post .meta { font-size: 11px; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+  .post h4 { font-size: 16px; font-weight: 600; }
+  .post p { font-size: 14px; color: var(--muted); }
+  .post a { margin-top: auto; padding-top: 6px; font-size: 14px; color: var(--accent); text-decoration: none; font-weight: 600; }
+
+  .site-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 14px; }
+  .site { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; text-decoration: none; display: block; }
+  .site img { width: 100%; height: auto; }
+  .site span { display: block; padding: 12px 14px 14px; font-size: 14px; font-weight: 600; }
+  .site small { display: block; font-weight: 500; color: var(--muted); font-size: 12px; }
+  .site:hover { border-color: var(--accent); }
+
+  /* Process */
+  .pipeline { margin-top: 32px; display: grid; gap: 12px; }
+  .step { display: grid; grid-template-columns: 56px 1fr; gap: 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+  .step .n { font-family: var(--head); font-size: 22px; color: var(--accent); font-weight: 600; }
+  .step h3 { font-size: 17px; font-weight: 600; }
+  .step p { margin-top: 6px; color: var(--muted); font-size: 15px; }
+  .step .chips { margin-top: 12px; }
+  .step .chip { font-size: 12px; padding: 5px 10px; }
+
+  /* Experience */
+  .timeline { position: relative; margin-top: 32px; padding-left: 28px; }
+  .timeline::before { content: ""; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 1px; background: var(--line); }
+  .job { position: relative; padding: 0 0 36px; }
+  .job::before { content: ""; position: absolute; left: -28px; top: 8px; width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--accent); background: var(--bg); }
+  .job-head { display: flex; justify-content: space-between; align-items: start; gap: 12px; flex-wrap: wrap; }
+  .job h3 { font-size: 20px; font-weight: 600; }
+  .job .co { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .job .when { font-size: 12px; padding: 6px 12px; border-radius: 999px; background: var(--card-2); border: 1px solid var(--line); white-space: nowrap; }
+  .job ul { margin: 12px 0 0; padding-left: 18px; color: var(--muted); font-size: 15px; }
+  .job li { margin-bottom: 6px; }
+  .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+
+  /* Contact */
+  .contact h2 { font-size: clamp(32px, 4.5vw, 52px); font-weight: 600; margin-top: 16px; }
+  .contact h2 .accent { color: var(--accent); }
+  .contact .row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .contact .btn { width: auto; padding: 14px 22px; margin-top: 0; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 0; margin-top: 56px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+  /* Right rail */
+  .rail {
+    position: fixed; right: 18px; top: 50%; transform: translateY(-50%);
+    display: grid; gap: 10px; padding: 10px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--line); z-index: 10;
+  }
+  .rail a {
+    width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+    text-decoration: none; font-size: 12px; font-weight: 600; color: var(--muted);
+    background: var(--card-2); border: 1px solid var(--line);
+  }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent-ink); background: var(--accent); border-color: var(--accent); outline: none; }
+
+  /* Lightbox */
+  .lb { position: fixed; inset: 0; z-index: 50; background: rgba(8, 8, 8, 0.94); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 56px 64px; }
+  .lb[hidden] { display: none; }
+  .lb-stage { max-width: 100%; display: flex; align-items: center; justify-content: center; }
+  .lb-stage img { max-width: 100%; max-height: calc(100vh - 140px); width: auto; height: auto; object-fit: contain; border-radius: 10px; }
+  .lb-cap { margin-top: 14px; font-size: 14px; color: var(--muted); text-align: center; }
+  .lb button {
+    position: absolute; background: var(--card); border: 1px solid var(--line); color: var(--text);
+    width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 22px; line-height: 1;
+  }
+  .lb button:hover { border-color: var(--accent); color: var(--accent); }
+  .lb-close { top: 16px; right: 16px; }
+  .lb-prev { left: 14px; top: 50%; transform: translateY(-50%); }
+  .lb-next { right: 14px; top: 50%; transform: translateY(-50%); }
+  body.locked { overflow: hidden; }
+
+  @media (max-width: 1100px) {
+    .wrap { padding-right: 32px; }
+    .rail { display: none; }
+  }
+  @media (max-width: 900px) {
+    .wrap { grid-template-columns: 1fr; gap: 24px; padding: 16px; }
+    .profile { position: static; display: grid; grid-template-columns: 120px 1fr; gap: 16px; text-align: left; align-items: center; padding: 16px; }
+    .profile .photo { aspect-ratio: 1 / 1; border-radius: 14px; }
+    .profile .name { margin-top: 0; font-size: 19px; }
+    .profile .role { font-size: 10px; }
+    .profile .socials { justify-content: flex-start; margin: 10px 0; }
+    .profile .email, .profile .loc { display: block; }
+    .profile .actions { grid-column: 1 / -1; display: grid; gap: 10px; }
+    .profile .btn.primary { margin-top: 0; }
+    .stats { grid-template-columns: 1fr; }
+    .blog-grid, .site-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .grid-2, .edu-grid { grid-template-columns: 1fr; }
+    .profile { grid-template-columns: 1fr; text-align: center; }
+    .profile .socials { justify-content: center; }
+    .profile .photo { max-width: 240px; margin: 0 auto; }
+    section { padding: 40px 0; }
+    .hero h1 { font-size: 40px; }
+    .step { grid-template-columns: 1fr; gap: 6px; }
+    .contact .btn { width: 100%; }
+    .vid-grid { grid-template-columns: 1fr; }
+    .shot-grid { grid-template-columns: repeat(2, 1fr); }
+    .lb { padding: 56px 16px; }
+    .lb-prev, .lb-next { top: auto; bottom: 14px; transform: none; }
+    .lb-prev { left: 14px; } .lb-next { right: 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+
+
+
+<nav class="rail" aria-label="Sections">
+  <a href="#top" title="Top">Top</a>
+  <a href="#about" title="About">Ab</a>
+  <a href="#work" title="Work">Wk</a>
+  <a href="#process" title="Process">Pr</a>
+  <a href="#experience" title="Experience">Ex</a>
+  <a href="#contact" title="Contact">Ct</a>
+</nav>
+
+<div class="wrap" id="top">
+
+  <aside class="profile">
+    <img class="photo" src="zeng_media/profile/ricky-laptop-cutout.png" alt="Ricky Mejila">
+    <div class="name">Ricky Mejila</div>
+    <div class="role">Creative Marketing &amp; AI Automation</div>
+    <a class="email" href="mailto:rtm0708@yahoo.com">rtm0708@yahoo.com</a>
+    <div class="loc">Philippines</div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/rickymejila/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+    </div>
+    <div class="actions">
+      <a class="btn" href="Ricky_Mejila_Resume.pdf">View My CV</a>
+      <a class="btn primary" href="#contact">Get in touch</a>
+    </div>
+    <div class="avail">Available for select work</div>
+  </aside>
+
+  <main>
+
+    <section class="hero" id="intro">
+      <span class="eyebrow">Hello, I'm Ricky</span>
+      <h1>Systems that turn AI into <span class="accent">finished work</span>.</h1>
+      <p class="intro">I build the systems that turn AI into finished content, working websites, and pipelines that don't need babysitting. Content, social, video, design, CRM and AI workflow automation, run as one system.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="#work">See selected work</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num">8</div><div class="label">Brands and employers</div></div>
+        <div class="stat"><div class="num">7</div><div class="label">Step content pipeline, automated</div></div>
+        <div class="stat"><div class="num">2023</div><div class="label">Working with RevUp Now AI since</div></div>
+      </div>
+      <div class="scroll-cue">Scroll</div>
+    </section>
+
+    <section id="about">
+      <span class="eyebrow">About</span>
+      <h2 class="section-title">Creative marketing with an automation engine behind it</h2>
+      <p class="lede">Creative marketing and AI automation specialist with hands-on experience across content production, video editing, social media, graphic design, website management, lead generation, CRM operations, and AI-powered workflow development. I use large language models, APIs, Model Context Protocol integrations, and automation platforms to speed up content production, support conversions, and cut repetitive work.</p>
+      <div class="grid-2">
+        <div class="card"><span class="tag">Content &amp; Creative</span><h3>Make it</h3><p>Video editing, short-form content, Reels, podcast editing, motion graphics, graphic design, pitch decks, marketing collateral.</p></div>
+        <div class="card"><span class="tag">Marketing &amp; Social</span><h3>Get it seen</h3><p>Social media management, content strategy, content calendars, lead generation, email marketing, website content and design.</p></div>
+        <div class="card"><span class="tag">AI &amp; Workflow Automation</span><h3>Make it run itself</h3><p>LLM-powered workflows, ChatGPT, Claude Code, Model Context Protocol (MCP), API integrations, automated content production, workflow orchestration.</p></div>
+        <div class="card"><span class="tag">CRM &amp; Marketing Operations</span><h3>Keep it moving</h3><p>Monday.com, HubSpot CRM, GoHighLevel, Zapier, lead routing, pipeline management, automated follow-up processes.</p></div>
+      </div>
+      <div class="chips" aria-label="Tools and platforms">
+        <span class="chip">Claude Code</span><span class="chip">ChatGPT</span><span class="chip">Anthropic</span><span class="chip">HubSpot</span><span class="chip">GoHighLevel</span><span class="chip">Zapier</span><span class="chip">Monday.com</span><span class="chip">WordPress</span><span class="chip">ClickUp</span><span class="chip">DaVinci Resolve</span><span class="chip">Adobe Premiere Pro</span><span class="chip">After Effects</span><span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">Canva</span>
+      </div>
+    </section>
+
+    <section id="work">
+      <span class="eyebrow">Selected work</span>
+      <h2 class="section-title">Work by client</h2>
+      <p class="lede">Pick a client to see what I made for them. Videos play in place, and any graphic opens full size.</p>
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <div id="panels"></div>
+    </section>
+
+    <section id="process">
+      <span class="eyebrow">How I work</span>
+      <h2 class="section-title">A real content pipeline, end to end</h2>
+      <p class="lede">The automated workflow behind the RevUp Now AI blog: one topic goes in, a reviewed, published, socially repurposed post comes out. A human stays in the loop at review.</p>
+      <div class="pipeline">
+        <div class="step"><div class="n">01</div><div><h3>Trigger &amp; topic select</h3><p>A weekly scheduled job wakes the pipeline headlessly and picks the next unused topic from a maintained content queue.</p><div class="chips"><span class="chip">Windows Task Scheduler</span><span class="chip">PowerShell</span></div></div></div>
+        <div class="step"><div class="n">02</div><div><h3>Write &amp; illustrate</h3><p>Claude Code writes the full article in the brand's voice and template, then generates a custom hero image to match.</p><div class="chips"><span class="chip">Claude Code</span><span class="chip">Higgsfield (nano_banana_pro)</span></div></div></div>
+        <div class="step"><div class="n">03</div><div><h3>Publish draft</h3><p>The finished post and image are pushed to WordPress as a draft through a purpose-built MCP server. No manual copy-paste.</p><div class="chips"><span class="chip">WordPress</span><span class="chip">Revi MCP</span></div></div></div>
+        <div class="step"><div class="n">04</div><div><h3>Quality gate</h3><p>A deterministic, zero-token validator checks word count, structure, and banned phrases before any human sees the draft.</p><div class="chips"><span class="chip">PowerShell validator</span></div></div></div>
+        <div class="step"><div class="n">05</div><div><h3>Create review task</h3><p>A ClickUp task is created with the full article as Markdown plus a downloadable, pixel-accurate HTML preview attached.</p><div class="chips"><span class="chip">ClickUp API</span></div></div></div>
+        <div class="step"><div class="n">06</div><div><h3>Notify reviewer</h3><p>The reviewer gets pinged directly in Microsoft Teams with a one-click link to the review task.</p><div class="chips"><span class="chip">Microsoft Teams</span><span class="chip">Graph API</span></div></div></div>
+        <div class="step"><div class="n">07</div><div><h3>Approve &amp; repurpose</h3><p>Once approved, the post goes live and is automatically repurposed into social posts across four platforms.</p><div class="chips"><span class="chip">GoHighLevel</span><span class="chip">Facebook</span><span class="chip">Instagram</span><span class="chip">LinkedIn</span><span class="chip">TikTok</span></div></div></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <span class="eyebrow">Experience</span>
+      <h2 class="section-title">Where I've worked</h2>
+      <div class="timeline">
+
+        <div class="job">
+          <div class="job-head"><div><h3>RevUp Now AI</h3><div class="co">Content &amp; Automation Specialist</div></div><span class="when">Aug 2023 to 2026</span></div>
+          <ul>
+            <li>Design AI-powered workflows using ChatGPT, Claude Code, MCP integrations, APIs, and automation platforms.</li>
+            <li>Built an end-to-end system that automates blog production, social media posts, graphic generation, and SEO tasks.</li>
+            <li>Connect AI tools with marketing and CRM systems to move content, leads, and information between platforms.</li>
+            <li>Build workflows in Monday.com, HubSpot, GoHighLevel, and Zapier for content management, lead routing, and automated follow-up.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><div><h3>MicroMain</h3><div class="co">CMMS and EAM software company</div></div><span class="when">Aug 2023 to 2026</span></div>
+          <ul>
+            <li>Supported lead generation, content marketing, website improvements, social media, and campaign execution.</li>
+            <li>Generated and nurtured leads through content and training campaigns, helping convert prospects into customers.</li>
+            <li>Improved the website's performance score through content, functionality, and optimization work.</li>
+            <li>Expanded social media exposure through consistent branded content, promotional videos, and short-form video.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><div><h3>eProject Direct</h3><div class="co">Video, social, print, and website</div></div><span class="when">Jun 2024 to 2026</span></div>
+          <ul>
+            <li>Create short- and long-form videos for real estate marketing, including property showcases and platform-specific Reels.</li>
+            <li>Produce content for Instagram, Facebook, TikTok, LinkedIn, and other social channels.</li>
+            <li>Design flyers, brochures, print collateral, pitch decks, and client-facing presentation materials.</li>
+            <li>Design and maintain the company website while supporting its brand presence and social media activity.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><div><h3>Marker Law</h3><div class="co">Social media and Reels</div></div><span class="when">Jan 2026 to 2026</span></div>
+          <ul>
+            <li>Manage social media content planning and scheduling across digital platforms.</li>
+            <li>Edit Reels and other short-form videos that support brand visibility and audience engagement.</li>
+            <li>Organize content and keep campaigns consistent across active channels.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><div><h3>Reading Achievement Partners</h3><div class="co">Marketing Manager</div></div><span class="when">May 2023 to Jun 2023</span></div>
+          <ul>
+            <li>Managed LinkedIn and Instagram content creation, planning, and scheduling.</li>
+            <li>Produced promotional videos and maintained website content, including e-commerce functionality.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><div><h3>MillionaireMindcast.com</h3><div class="co">Video Editor &amp; Graphic Designer</div></div><span class="when">Jun 2022 to Jan 2023</span></div>
+          <ul>
+            <li>Edited video podcast episodes and repurposed content for YouTube, Instagram, and TikTok.</li>
+            <li>Designed branded graphics, thumbnails, logos, motion graphics, and promotional materials.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><div><h3>Corcoran Pacific Properties</h3><div class="co">Listing Concierge</div></div><span class="when">May 2021 to Jun 2022</span></div>
+          <ul>
+            <li>Supported real estate agents with listing marketing, promotional content, and documentation.</li>
+            <li>Created listing assets, managed MLS entries, edited property photos, and supported email marketing campaigns.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="edu-grid">
+        <div class="card">
+          <span class="tag">Education</span>
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p>San Sebastian College-Recoletos, Cavite City, Philippines. 2000 to 2004.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Languages</span>
+          <h3>English &amp; Filipino</h3>
+          <p>Fluent in both.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Have content, a workflow, or an <span class="accent">automation</span> to build?</h2>
+        <p class="lede" style="margin-top:14px">Let's talk.</p>
+        <div class="row">
+          <a class="btn primary" href="mailto:rtm0708@yahoo.com">Email rtm0708@yahoo.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/rickymejila/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+          <a class="btn" href="Ricky_Mejila_Resume.pdf">View My CV</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="wrap" style="padding-top:0">
+  <footer style="grid-column: 1 / -1;">
+    <span>&copy; 2026 Ricky T. Mejila</span>
+    <span>Creative Marketing &amp; AI Automation Specialist</span>
+  </footer>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous">&lsaquo;</button>
+  <button class="lb-next" id="lbNext" aria-label="Next">&rsaquo;</button>
+  <div class="lb-stage" id="lbStage"></div>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+const COMPANIES = [
+  {
+    id: "revup", name: "RevUp Now AI",
+    videos: [
+      { title: "What Is RevUp Now AI", src: "zeng_media/videos/what-is-revup-now-ai.mp4", poster: "zeng_media/videos/what-is-revup-now-ai-poster.jpg" },
+      { title: "Podcast, Episode 1", src: "zeng_media/videos/podcast-ep1.mp4", poster: "zeng_media/videos/podcast-ep1-poster.jpg" },
+      { title: "Walking the Dog", src: "zeng_media/videos/walking-the-dog.mp4", poster: "zeng_media/videos/walking-the-dog-poster.jpg" },
+      { title: "Revi MCP Ad: The Roommate", src: "zeng_media/videos/revi-mcp-ad-roommate.mp4", poster: "zeng_media/videos/revi-mcp-ad-roommate-poster.jpg" },
+      { title: "Revi MCP Interview Ad", src: "zeng_media/videos/revi-interview-ad.mp4", poster: "zeng_media/videos/revi-interview-ad-poster.jpg" },
+      { title: "Convention Interview", src: "zeng_media/videos/revi-convention-interview.mp4", poster: "zeng_media/videos/revi-convention-interview-poster.jpg" },
+      { title: "Revi MCP Ad", src: "zeng_media/videos/revi-mcp-ad.mp4", poster: "zeng_media/videos/revi-mcp-ad-poster.jpg", wide: true },
+      { title: "Dev Lunch Break", src: "zeng_media/videos/revi-dev-lunch-break.mp4", poster: "zeng_media/videos/revi-dev-lunch-break-poster.jpg", wide: true }
+    ],
+    social: [
+      { src: "zeng_media/social/behind-the-scenes.jpg", caption: "Trade-business awareness · Facebook/Instagram" },
+      { src: "zeng_media/social/plumbing-burst-pipe.jpg", caption: "Emergency-hook ad concept · Plumbing" },
+      { src: "zeng_media/social/not-an-ai-agency.jpg", caption: "Positioning post · \"We're a partner, not a tool\"" },
+      { src: "zeng_media/social/change-orders.jpg", caption: "Pain-point hook · Construction" },
+      { src: "zeng_media/social/pricing-transparency.jpg", caption: "Objection handling · Pricing transparency" },
+      { src: "zeng_media/social/hvac-after-hours.jpg", caption: "Vertical campaign · HVAC after-hours" },
+      { src: "zeng_media/social/revi-mcp-ad-light.jpg", caption: "Product ad · Revi MCP Bridge for WordPress (light)" },
+      { src: "zeng_media/social/revi-mcp-ad-dark.jpg", caption: "Product ad · Revi MCP Bridge for WordPress (dark)" }
+    ],
+    blog: [
+      { tag: "Roofing", title: "Storm Damage and Insurance Supplements: The Roofing Paperwork Problem Nobody's Solved", excerpt: "Xactimate prices what you tell it to price. It doesn't catch what you forgot, chase a quiet adjuster, or answer the phone during a storm surge.", image: "zeng_media/blog/Roofing-paperworks-.png", link: "https://revupnow.ai/storm-damage-roofing-insurance-supplements/" },
+      { tag: "Construction", title: "The Change Order Problem: What It Actually Is, and Why Contractors Lose Money on It", excerpt: "A homeowner asks for one more outlet. Everyone nods. Six weeks later nobody agrees on what was approved.", image: "zeng_media/blog/Document-the-change.png", link: "https://revupnow.ai/change-order-problem-construction/" },
+      { tag: "AI Operations", title: "AI vs. Hiring an Office Manager: What Actually Costs Less?", excerpt: "Before you post the job listing, it's worth asking what you're actually hiring for: a person, or the work getting done.", image: "zeng_media/blog/AI-systems-vs-hiring-managers.png", link: "https://revupnow.ai/ai-vs-hiring-office-manager/" },
+      { tag: "HVAC", title: "Why HVAC Jobs Sit Unbilled for Days, and What It Is Actually Costing You", excerpt: "A technician finishes a job at 4:45 PM. The invoice doesn't go out until the following Tuesday. Here's what that delay actually costs.", image: "zeng_media/blog/Invoicing.png", link: "https://revupnow.ai/hvac-dispatch-to-invoice-automation/" }
+    ]
+  },
+  {
+    id: "micromain", name: "MicroMain",
+    social: [
+      { src: "zeng_media/social/micromain-social-1.jpg", caption: "Demo-objection post · \"Not a feature tour\"" },
+      { src: "zeng_media/social/micromain-social-2.jpg", caption: "Educational carousel · Reactive maintenance and inventory" },
+      { src: "zeng_media/social/micromain-social-3.jpg", caption: "Product walkthrough · Asset QR/barcode scanning" }
+    ],
+    sites: [
+      { title: "MicroMain", url: "https://micromain.com/", display: "micromain.com", image: "zeng_media/work/micromain-site.jpg" }
+    ]
+  },
+  {
+    id: "eproject", name: "eProject Direct",
+    videos: [
+      { title: "LIST Sotheby's Realty, RealTrends Recognition", src: "zeng_media/videos/eproject-list-sothebys.mp4", poster: "zeng_media/videos/eproject-list-sothebys-poster.jpg", wide: true },
+      { title: "Web Promo", src: "zeng_media/videos/eproject-web-promo.mp4", poster: "zeng_media/videos/eproject-web-promo-poster.jpg", wide: true },
+      { title: "eProject Direct Ad", src: "zeng_media/videos/eproject-ad-2.mp4", poster: "zeng_media/videos/eproject-ad-2-poster.jpg" },
+      { title: "Carousel Ad: Real Estate Support Simplified", src: "zeng_media/videos/eproject-carousel-ad.mp4", poster: "zeng_media/videos/eproject-carousel-ad-poster.jpg" }
+    ],
+    sites: [
+      { title: "eProject Direct", url: "https://www.eprojectdirect.com/", display: "eprojectdirect.com", image: "zeng_media/work/eproject-direct-site.jpg" }
+    ]
+  },
+  {
+    id: "marker", name: "Marker Law",
+    videos: [
+      { title: "What Was Taken", src: "zeng_media/videos/marker-law-what-was-taken.mp4", poster: "zeng_media/videos/marker-law-what-was-taken-poster.jpg", wide: true },
+      { title: "What to Ask a WC Adjuster", src: "zeng_media/videos/marker-law-wc-adjuster.mp4", poster: "zeng_media/videos/marker-law-wc-adjuster-poster.jpg" },
+      { title: "PT Recovery Has a Soundtrack", src: "zeng_media/videos/marker-law-pt-recovery.mp4", poster: "zeng_media/videos/marker-law-pt-recovery-poster.jpg" },
+      { title: "Top 5 Best Guitar Solos Ever", src: "zeng_media/videos/marker-law-top-5-solo.mp4", poster: "zeng_media/videos/marker-law-top-5-solo-poster.jpg" }
+    ]
+  },
+  {
+    id: "golden", name: "Golden Pineapple Group",
+    print: [
+      { src: "zeng_media/work/heahea-brochure.jpg", caption: "Listing brochure · 94-1211 Heahea St" },
+      { src: "zeng_media/work/heahea-fact-sheet.jpg", caption: "Fact sheet · 94-1211 Heahea St" },
+      { src: "zeng_media/work/heahea-flyer.jpg", caption: "Open house flyer · 94-1211 Heahea St" }
+    ]
+  }
+];
+
+const tabsEl = document.getElementById("tabs");
+const panelsEl = document.getElementById("panels");
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const lightboxSets = {};
+
+function countOf(c) {
+  return ["videos", "social", "print", "sites", "blog"].reduce((n, k) => n + (c[k] ? c[k].length : 0), 0);
+}
+
+function shotButtons(c, key, list) {
+  lightboxSets[key] = list;
+  return `<div class="shot-grid">` + list.map((s, i) => `
+    <button class="shot" data-set="${key}" data-i="${i}" aria-label="View full size: ${esc(s.caption)}">
+      <img loading="lazy" src="${esc(s.src)}" alt="${esc(s.caption)}">
+      <span>${esc(s.caption)}</span>
+    </button>`).join("") + `</div>`;
+}
+
+function panelHTML(c) {
+  let html = "";
+  if (c.videos) {
+    html += `<h3 class="sub">Reels &amp; video <span class="n">${c.videos.length}</span></h3>
+      <p class="hint">Plays in place. Use the player controls to pause or turn on sound.</p>
+      <div class="vid-grid">` + c.videos.map(v => `
+        <figure class="vid${v.wide ? " wide" : ""}">
+          <video controls preload="metadata" playsinline poster="${esc(v.poster)}" src="${esc(v.src)}"></video>
+          <figcaption>${esc(v.title)}</figcaption>
+        </figure>`).join("") + `</div>`;
+  }
+  if (c.social) {
+    html += `<h3 class="sub">Social graphics <span class="n">${c.social.length}</span></h3>
+      <p class="hint">Click any graphic to see it full size.</p>` + shotButtons(c, c.id + "-social", c.social);
+  }
+  if (c.print) {
+    html += `<h3 class="sub">Print &amp; graphic design <span class="n">${c.print.length}</span></h3>
+      <p class="hint">Click any piece to see it full size.</p>` + shotButtons(c, c.id + "-print", c.print);
+  }
+  if (c.sites) {
+    html += `<h3 class="sub">Websites <span class="n">${c.sites.length}</span></h3>
+      <div class="site-grid">` + c.sites.map(s => `
+        <a class="site" href="${esc(s.url)}" target="_blank" rel="noopener">
+          <img loading="lazy" src="${esc(s.image)}" alt="Screenshot of ${esc(s.display)}">
+          <span>${esc(s.title)}<small>${esc(s.display)} &#8599;</small></span>
+        </a>`).join("") + `</div>`;
+  }
+  if (c.blog) {
+    html += `<h3 class="sub">Blog posts <span class="n">${c.blog.length}</span></h3>
+      <p class="hint">Written, art-directed, and shipped. Live on revupnow.ai.</p>
+      <div class="blog-grid">` + c.blog.map(b => `
+        <article class="post">
+          <img loading="lazy" src="${esc(b.image)}" alt="${esc(b.title)}">
+          <div class="body">
+            <span class="meta">${esc(b.tag)}</span>
+            <h4>${esc(b.title)}</h4>
+            <p>${esc(b.excerpt)}</p>
+            <a href="${esc(b.link)}" target="_blank" rel="noopener">Read on revupnow.ai &#8599;</a>
+          </div>
+        </article>`).join("") + `</div>`;
+  }
+  return html;
+}
+
+COMPANIES.forEach((c, i) => {
+  const btn = document.createElement("button");
+  btn.className = "tab";
+  btn.setAttribute("role", "tab");
+  btn.id = "tab-" + c.id;
+  btn.setAttribute("aria-controls", "panel-" + c.id);
+  btn.setAttribute("aria-selected", i === 0 ? "true" : "false");
+  btn.innerHTML = `${esc(c.name)}<span class="count">${countOf(c)}</span>`;
+  btn.addEventListener("click", () => selectTab(c.id));
+  tabsEl.appendChild(btn);
+
+  const panel = document.createElement("div");
+  panel.className = "panel" + (i === 0 ? " active" : "");
+  panel.id = "panel-" + c.id;
+  panel.setAttribute("role", "tabpanel");
+  panel.setAttribute("aria-labelledby", "tab-" + c.id);
+  panel.innerHTML = panelHTML(c);
+  panelsEl.appendChild(panel);
+});
+
+function selectTab(id) {
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.id === "tab-" + id ? "true" : "false"));
+  document.querySelectorAll(".panel").forEach(p => p.classList.toggle("active", p.id === "panel-" + id));
+}
+
+/* Lightbox */
+const lb = document.getElementById("lb");
+const lbStage = document.getElementById("lbStage");
+const lbCap = document.getElementById("lbCap");
+const lbPrev = document.getElementById("lbPrev");
+const lbNext = document.getElementById("lbNext");
+let lbList = [], lbIndex = 0;
+
+function lbShow() {
+  const item = lbList[lbIndex];
+  lbStage.innerHTML = `<img src="${esc(item.src)}" alt="${esc(item.caption)}">`;
+  lbCap.textContent = item.caption + (lbList.length > 1 ? `  (${lbIndex + 1} of ${lbList.length})` : "");
+  lbPrev.style.display = lbList.length > 1 ? "" : "none";
+  lbNext.style.display = lbList.length > 1 ? "" : "none";
+}
+function lbOpen(set, i) {
+  lbList = lightboxSets[set]; lbIndex = i;
+  lb.hidden = false; document.body.classList.add("locked");
+  lbShow();
+  document.getElementById("lbClose").focus();
+}
+function lbClose() {
+  lb.hidden = true; lbStage.innerHTML = ""; document.body.classList.remove("locked");
+}
+function lbStep(d) { lbIndex = (lbIndex + d + lbList.length) % lbList.length; lbShow(); }
+
+panelsEl.addEventListener("click", e => {
+  const b = e.target.closest(".shot");
+  if (b) lbOpen(b.dataset.set, Number(b.dataset.i));
+});
+document.getElementById("lbClose").addEventListener("click", lbClose);
+lbPrev.addEventListener("click", () => lbStep(-1));
+lbNext.addEventListener("click", () => lbStep(1));
+lb.addEventListener("click", e => { if (e.target === lb || e.target === lbStage) lbClose(); });
+document.addEventListener("keydown", e => {
+  if (lb.hidden) return;
+  if (e.key === "Escape") lbClose();
+  if (e.key === "ArrowLeft") lbStep(-1);
+  if (e.key === "ArrowRight") lbStep(1);
+});
+</script>
+
+
